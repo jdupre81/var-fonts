@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variante 098</title>
+  <link rel="stylesheet" href="../fonts.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<!--
+  <div class="container">
+    <div class="vertical-center">
+    <button onclick="window.location.href='../jimena-dupre-097/index.html';">
+      Back
+    </button>
+    <button onclick="window.location.href='../index.html';">
+      Main Page
+    </button>
+    <button onclick="window.location.href='../jimena-dupre-099/index.html';">
+      Next
+    </button> <span class="var98">Variante 98</span>
+  </div>
+-->
+
+<div class="body">
+<h3 class="fixed">arte impreso y digital</h3>
+<div class="word">
+	<span>D</span>
+	<span>u</span>
+	<span>p</span>
+	<span>r</span>
+	<span>é</span>
+</div>
+<!--
+<footer>
+	<p>Created with <i class="fa fa-heart"></i> by <a target="_blank" href="https://florin-pop.com">Florin Pop</a></p>
+</footer>
+-->
+</div>  
+    
+    <script type="text/javascript">
+    
+    const spans = document.querySelectorAll('.word span');
+
+spans.forEach((span, idx) => {
+	span.addEventListener('click', (e) => {
+		e.target.classList.add('active');
+	});
+	span.addEventListener('animationend', (e) => {
+		e.target.classList.remove('active');
+	});
+	
+	// Initial animation
+	setTimeout(() => {
+		span.classList.add('active');
+	}, 750 * (idx+1))
+});
+    
+    
+    </script>
+    
+</body>
+</html>
