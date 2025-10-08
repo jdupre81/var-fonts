@@ -1,0 +1,57 @@
+:root {
+  font-size: 100%;
+  font-family: 'Recursive', monospace;
+}
+
+/*
+  Google Font embedded in CSS
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..1000,0..1,0..1,0..1&display=swap');
+
+.animation{
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0px;
+}
+
+h1 {
+  font-size: 100px;
+  font-family: 'Recursive';
+  text-align: center;
+  animation-name: h1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
+}
+
+h1:hover {
+  background-color: blueviolet;
+  color: aqua;
+}
+
+
+@keyframes h1 {
+  from {
+    font-variation-settings: 'CASL' 1, 'wght' 300;
+  }
+  to {
+    font-variation-settings: 'CASL' 0, 'wght' 1000;
+  }
+}
+
+/*
+@keyframes h2 {
+  from {
+    font-variation-settings: 'CASL' 1, 'wght' 500;
+  }
+  to {
+    font-variation-settings: 'CASL' 0, 'wght' 800;
+  }
+}
+*/
