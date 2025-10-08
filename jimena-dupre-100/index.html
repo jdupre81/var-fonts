@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variante 100</title>
+  <link rel="stylesheet" href="../fonts.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<!--
+  <div class="container">
+    <div class="vertical-center">
+    <button onclick="window.location.href='../jimena-dupre-099/index.html';">
+      Back
+    </button>
+    <button onclick="window.location.href='../index.html';">
+      Main Page
+    </button>
+    <button onclick="window.location.href='../jimena-dupre-101/index.html';">
+      Next
+    </button> <span class="var100">Variante 100</span>
+  </div>
+-->
+
+<div class="body">
+
+    <h1 contenteditable data-heading="Frozen">
+	juega <br> y <br> escribe aqui!
+</h1>
+
+<p>Click word change the text</p>
+    
+</div>    
+    
+    <script type="text/javascript">
+    
+    
+// JS is to make the text editable for demo purpose, not required for the effect. Thanks for the suggestion @chriscoyier! 
+var h1 = document.querySelector("h1");
+
+h1.addEventListener("input", function() {
+    this.setAttribute("data-heading", this.innerText);
+});
+    
+    </script>
+    
+</body>
+</html>
