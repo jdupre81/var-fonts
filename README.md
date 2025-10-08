@@ -1,4 +1,5 @@
 🎨 **Variable Fonts Animation Project**
+
 Project Overview
 
 This project was originally developed in 2022 as part of my CAS studies at the Zurich University of the Arts (ZHdK).
